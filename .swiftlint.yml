@@ -1,0 +1,36 @@
+disabled_rules:
+  - line_length
+  - todo
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - closure_spacing
+  - overridden_super_call
+  - redundant_nil_coalescing
+#  - private_outlet
+  - nimble_operator
+  - attributes
+  - operator_usage_whitespace
+  - closure_end_indentation
+  - first_where
+  - sorted_imports
+  - object_literal
+  - number_separator
+  - prohibited_super_call
+  - fatal_error_message
+  - force_unwrapping
+
+function_body_length:
+  warning: 75
+
+type_body_length:
+  warning: 300
+
+nesting:
+  type_level:
+    warning: 2
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - MusicListTests
+  - MusicListUITests
